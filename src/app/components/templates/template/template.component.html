@@ -1,0 +1,44 @@
+<div class = "main-class">
+
+    <div class = "photo-class">
+        {{demoTemplate.photo}}
+    </div>
+
+    <div class = "name-class">
+        <b>{{demoTemplate.name}}</b>
+    </div>
+
+    <div class = "summary-class">
+        <p class = "summary-title"><b>{{demoTemplate.summary.toUpperCase()}}</b></p>
+    </div>
+
+    <div class = "projects-class">
+        <b>{{demoTemplate.projects}}</b>
+    </div>
+    
+    <div class = "contacts-class">
+        <p class = "contacts-title"><b>CONTACTS</b></p>
+        <ul>
+            <li>{{demoTemplate.contacts.location}}</li>
+            <li>{{demoTemplate.contacts.phone}}</li>
+            <li>{{demoTemplate.contacts.mail}}</li>
+            <li>{{demoTemplate.contacts.linkedin}}</li>
+        </ul>
+    </div>
+
+    <div class = "skills-class">
+        <p class = "contacts-title"><b>SKILLS</b></p>
+        <div *ngFor = "let skill of skills">
+            {{skill.name}}
+        </div>
+    </div>
+
+    <div class = "languages-class">
+        <p>{{demoTemplate.languages}}</p>
+    </div>
+
+    <div class = "experience-class">
+        <p>{{demoTemplate.experience}}</p>
+    </div>
+
+</div>
